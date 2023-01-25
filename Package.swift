@@ -3,20 +3,20 @@
 import PackageDescription
  
 let package = Package(
-    name: "OpenSSL",
+    name: "openssl",
     platforms: [
         .iOS(.v9),
         .macOS(.v10_10)
     ],
     products: [
         .library(
-            name: "OpenSSL",
-            targets: ["OpenSSL"]),
+            name: "openssl",
+            targets: ["openssl"]),
     ],
     targets: [
         .binaryTarget(
-            name: "OpenSSL",
-            path: "Frameworks/OpenSSL.xcframework"
+            name: "openssl",
+            path: "Frameworks/openssl.xcframework"
         )
     ]
 )
